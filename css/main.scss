@@ -16,3 +16,23 @@
         "vendor/neat/neat",
         "base/base" // All additional stylesheets should be imported below Bitters
 ;
+
+body {
+  @include padding($base-spacing null null null);
+}
+
+h1, p, li {
+  @include margin(null $small-spacing);
+}
+
+h1, p {
+  @include margin($small-spacing null);
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  @include margin($small-spacing null null null)
+}
