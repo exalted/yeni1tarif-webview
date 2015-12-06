@@ -18,7 +18,8 @@
 ;
 
 body {
-  @include padding($base-spacing null null null);
+  $padding-top: $base-spacing * 2;
+  @include padding($padding-top null null null);
 }
 
 h1, p, li {
